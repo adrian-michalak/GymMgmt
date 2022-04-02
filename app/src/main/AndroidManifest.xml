@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myegineerapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".DetailsCompany.PaymentUserInformation" />
+        <activity android:name=".company_panel.FitnessDayDivision" />
+        <activity android:name=".company_panel.FitnessMembersManagement" />
+        <activity android:name=".DetailsCompany.SubmitFitnessRecord" />
+        <activity android:name=".company_panel.SubmitPaymentMember" />
+        <activity android:name=".DetailsCompany.PaymentsActivity" />
+        <activity android:name=".company_panel.UpdateFitnessClasses" />
+        <activity android:name=".accounts.ui.Prices" />
+        <activity android:name=".company_panel.AddFitnessCompany" />
+        <activity android:name=".company_panel.CompanyPanel" />
+        <activity android:name=".company_panel.UpdateFitness" />
+        <activity android:name=".company_panel.UpdateMainInformation" />
+        <activity android:name=".DetailsCompany.FitnessSchedule" />
+        <activity android:name=".accounts.ui.OpeningHours" />
+        <activity android:name=".accounts.ui.AddFitnessClasses" />
+        <activity android:name=".accounts.ui.CreateUserAccount" />
+        <activity android:name=".accounts.ui.CreateGymAccount" />
+        <activity android:name=".accounts.ui.SignIn" />
+        <activity android:name=".accounts.ui.UserLogin" />
+        <activity
+            android:name=".DetailsCompany.AddPost"
+            android:parentActivityName=".DetailsCompany.Posts" />
+        <activity
+            android:name=".DetailsCompany.Posts"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DetailsCompany.About"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DetailsCompany.GallerySlider"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DetailsCompany.DetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MainAppActivity" />
+        <activity
+            android:name=".accounts.ui.SelectablePanel"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEARCH" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- FIREBASE MESSAGING RECEIVER -->
+        <service
+            android:name=".ui.notifications.FirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- NOTIFICATION LIBRARY NotifyMe -->
+        <receiver android:name=".ui.notifications.NotificationReceiver" />
+        <receiver android:name="com.allyants.notifyme.NotificationPublisher" />
+        <receiver android:name="com.allyants.notifyme.BootNotifyMe">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+<!--===================================NOTIFY END ================================-->
+        <receiver android:name=".company_panel.SubmitPaymentMember">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

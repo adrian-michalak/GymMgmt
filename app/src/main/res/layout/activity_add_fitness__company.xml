@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".accounts.ui.AddFitnessClasses">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="Set a timetable"
+            android:padding="10sp"/>-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/fintess_name_et"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:hint="@string/fitness_name"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="3dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/training_day_name_et"
+            android:padding="10dp"
+            android:hint="@string/training_day"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="3dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:id="@+id/fitness_brief_description"
+            android:padding="10dp"
+            android:lines="4"
+            android:hint="@string/brief_description"
+            android:background="@drawable/edit_text_style"
+            android:layout_marginBottom="3dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0sp"
+            android:orientation="horizontal">
+            <TimePicker
+                android:id="@+id/time_picker_from"
+                android:timePickerMode="spinner"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:theme="@style/CalendarView" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/white"
+                android:text=" - "
+                android:padding="10sp"/>
+            <TimePicker
+                android:id="@+id/time_picker_to"
+                android:timePickerMode="spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:theme="@style/CalendarView" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/add_fitness_button"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/layout_bg"
+            android:textColor="@color/white"
+            android:text="@string/add"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fui_bgGitHub"
+    android:padding="5dp"
+    tools:context=".accounts.ui.OpeningHours">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_view_bg">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <CheckBox android:id="@+id/checkbox_monday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/monday"
+                android:layout_gravity="center_vertical"
+                android:buttonTint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:padding="5dp"
+                android:layout_marginEnd="10dp"
+                android:checked="true"
+                android:onClick="onCheckboxClicked"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10sp"
+                android:text="@string/open"
+                android:textColor="@color/white"/>
+            <TimePicker
+                android:id="@+id/time_picker_monday_open"
+                android:timePickerMode="spinner"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:theme="@style/CalendarView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:textSize="15dp"
+                android:layout_gravity="center_vertical"
+                android:text="@string/close"
+                android:textColor="@color/white"/>
+            <TimePicker
+                android:id="@+id/time_picker_monday_close"
+                android:timePickerMode="spinner"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:theme="@style/CalendarView" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="@color/turquoise"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_view_bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox android:id="@+id/checkbox_tuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tuesday"
+                    android:layout_gravity="center_vertical
+"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:checked="true"
+                    android:onClick="onCheckboxClicked"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:text="Open: "
+                    android:textColor="@color/white"/>
+                <TimePicker
+                    android:id="@+id/time_picker_tuesday_open"
+                    android:timePickerMode="spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:theme="@style/CalendarView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Close:"
+                    android:textColor="@color/white"/>
+                <TimePicker
+                    android:id="@+id/time_picker_tuesday_close"
+                    android:timePickerMode="spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:theme="@style/CalendarView" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/turquoise"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_view_bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox android:id="@+id/checkbox_wednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wednesday"
+                    android:layout_gravity="center_vertical
+"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:checked="true"
+                    android:onClick="onCheckboxClicked"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:text="Open: "
+                    android:textColor="@color/white"/>
+                <TimePicker
+                    android:id="@+id/time_picker_wednesday_open"
+                    android:timePickerMode="spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:theme="@style/CalendarView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Close:"
+                    android:textColor="@color/white"/>
+                <TimePicker
+                    android:id="@+id/time_picker_wednesday_close"
+                    android:timePickerMode="spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:theme="@style/CalendarView" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/turquoise"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_view_bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox android:id="@+id/checkbox_thursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/thursday"
+                    android:layout_gravity="center_vertical"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:checked="true"
+                    android:onClick="onCheckboxClicked"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:text="Open: "
+                    android:textColor="@color/white"/>
+                <TimePicker
+                    android:id="@+id/time_picker_thursday_open"
+                    android:timePickerMode="spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:theme="@style/CalendarView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Close:"
+                    android:textColor="@color/white"/>
+                <TimePicker
+                    android:id="@+id/time_picker_thursday_close"
+                    android:timePickerMode="spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:theme="@style/CalendarView" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/turquoise"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_view_bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox android:id="@+id/checkbox_friday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/friday"
+                    android:layout_gravity="center_vertical
+"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:checked="true"
+                    android:onClick="onCheckboxClicked"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:text="Open: "
+                    android:textColor="@color/white"/>
+                <TimePicker
+                    android:id="@+id/time_picker_friday_open"
+                    android:timePickerMode="spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:theme="@style/CalendarView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Close:"
+                    android:textColor="@color/white"/>
+                <TimePicker
+                    android:id="@+id/time_picker_friday_close"
+                    android:timePickerMode="spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:theme="@style/CalendarView" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/turquoise"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_view_bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox android:id="@+id/checkbox_saturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text= "@string/saturday"
+                    android:layout_gravity="center_vertical
+"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:checked="true"
+                    android:onClick="onCheckboxClicked"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:text="Open: "
+                    android:textColor="@color/white"/>
+                <TimePicker
+                    android:id="@+id/time_picker_saturday_open"
+                    android:timePickerMode="spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:theme="@style/CalendarView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Close:"
+                    android:textColor="@color/white"/>
+                <TimePicker
+                    android:id="@+id/time_picker_saturday_close"
+                    android:timePickerMode="spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:theme="@style/CalendarView" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/turquoise"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_view_bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox android:id="@+id/checkbox_sunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sunday"
+                    android:layout_gravity="center_vertical
+"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:checked="true"
+                    android:onClick="onCheckboxClicked"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="10sp"
+                    android:text="Open: "
+                    android:textColor="@color/white"/>
+                <TimePicker
+                    android:id="@+id/time_picker_sunday_open"
+                    android:timePickerMode="spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:theme="@style/CalendarView" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:textSize="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="Close:"
+                    android:textColor="@color/white"/>
+                <TimePicker
+                    android:id="@+id/time_picker_sunday_close"
+                    android:timePickerMode="spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:theme="@style/CalendarView" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit_opening_hours"
+            android:background="@drawable/button_add_style"
+            android:text="@string/next_step"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="40dp"/>
+    </LinearLayout>
+</ScrollView>

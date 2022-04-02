@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "250164210602",
+    "firebase_url": "https://gymfit-c4506.firebaseio.com",
+    "project_id": "gymfit-c4506",
+    "storage_bucket": "gymfit-c4506.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250164210602:android:ce0cb78b553970009619d3",
+        "android_client_info": {
+          "package_name": "com.example.gymfit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250164210602-kj6aauh6kosmoltfg9o9ucdgr8pra3ae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx8f9qV6qGQ371l8wvEmCLWnVIAwi2sow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250164210602-kj6aauh6kosmoltfg9o9ucdgr8pra3ae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250164210602:android:3acb7955ae01f9c29619d3",
+        "android_client_info": {
+          "package_name": "com.example.myegineerapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250164210602-kj6aauh6kosmoltfg9o9ucdgr8pra3ae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDx8f9qV6qGQ371l8wvEmCLWnVIAwi2sow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250164210602-kj6aauh6kosmoltfg9o9ucdgr8pra3ae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

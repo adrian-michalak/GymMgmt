@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fui_bgGitHub">
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/user_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border"
+            android:textColor="@color/white"
+            android:text="@string/User"/>
+        <Button
+            android:id="@+id/company_button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/button_border"
+            android:textColor="@color/white"
+            android:text="@string/Company"/>
+    </LinearLayout>-->
+
+    <FrameLayout
+        android:id="@+id/company_form"
+        android:layout_marginTop="40dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/form">
+
+            <EditText
+                android:id="@+id/company_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_style"
+                android:hint="@string/CompanyName"
+                android:inputType="text"
+                android:layout_marginBottom="5px"
+                android:paddingLeft="10dp"/>
+
+
+
+            <EditText
+                android:id="@+id/email_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_style"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:layout_marginBottom="5px"
+                android:paddingLeft="10dp"/>
+
+            <EditText
+                android:id="@+id/city_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_style"
+                android:hint="@string/City"
+                android:inputType="textPostalAddress"
+                android:layout_marginBottom="5px"
+                android:paddingLeft="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5px">
+
+                <EditText
+                    android:id="@+id/street_edit_text"
+                    android:layout_width="260dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_text_style"
+                    android:hint="@string/Street"
+                    android:inputType="textPostalAddress"
+                    android:layout_marginEnd="6dp"
+                    android:paddingLeft="10dp"/>
+                <EditText
+                    android:id="@+id/number_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edit_text_style"
+                    android:hint="@string/Number"
+                    android:inputType="textPostalAddress"
+                    android:paddingLeft="10dp"/>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/phone_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_style"
+                android:hint="@string/Phone"
+                android:inputType="phone"
+                android:layout_marginBottom="5px"
+                android:paddingLeft="10dp"/>
+
+
+            <EditText
+                android:id="@+id/price_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_style"
+                android:hint="@string/Price"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="5px"/>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:background="@drawable/edit_text_style">
+                    <EditText
+                        android:id="@+id/create_brief_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_style"
+                        android:hint="@string/brief_description"
+                        android:inputType="textMultiLine"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:lines="6"/>
+
+              <!-- <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="30dp"
+                   android:layout_marginTop="10dp"
+                   android:text="@string/Chosse"
+                   android:textColor="#000000"
+                   android:paddingLeft="10dp"/>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:padding="10dp"
+                   >
+                   <CheckBox android:id="@+id/checkbox_fitness"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/Fitness" />
+                   <CheckBox android:id="@+id/checkbox_gym"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/Gym" />
+                   <CheckBox android:id="@+id/checkbox_shape"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/BodyShape" />
+                   <CheckBox android:id="@+id/checkbox_boxing"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/Boxing" />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:padding="10dp">
+
+                   <CheckBox android:id="@+id/checkbox_tbc"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/TBC" />
+                   <CheckBox android:id="@+id/checkbox_body_step"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/BodyStep" />
+                   <CheckBox android:id="@+id/checkbox_zumba"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/Zumba" />
+                   <CheckBox android:id="@+id/checkbox_zumba_kids"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/ZumbaKids" />
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="3dp"/>
+               </LinearLayout>-->
+           </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_uploading"/>
+
+            <Button
+                android:id="@+id/gallery_image_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:layout_marginTop="30dp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_border"
+                android:text="@string/Add_photo"
+                android:textColor="#ffffff" />
+
+            <ProgressBar
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/addImgProgressBar"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <Button
+                    android:id="@+id/button_create_company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_style"
+                    android:text="Create account"
+                    android:textColor="#ffffff" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>

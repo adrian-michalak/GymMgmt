@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/darkGrey">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+   android:orientation="vertical">
+ <EditText
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/enter_notification_et"
+     android:textSize="20sp"
+     android:padding="10sp"
+     android:textColorHint="#D3D3D3"
+     android:hint="@string/enter_your_notification"
+     android:layout_marginEnd="10dp"
+     android:layout_marginStart="10dp"
+     android:layout_marginTop="20sp"
+     android:layout_marginBottom="10dp"
+     android:textColor="@color/white"
+     android:background="@color/grey"/>
+ <CalendarView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@color/grey"
+     android:layout_gravity="center"
+     android:theme="@style/CalendarView"
+     android:dateTextAppearance="@style/CalenderViewDateCustomText"
+     android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+     android:id="@+id/calendar_view"
+     android:layout_margin="5sp"/>
+
+ <TimePicker
+     android:id="@+id/time_picker"
+     android:timePickerMode="spinner"
+     android:layout_width="match_parent"
+     android:background="@color/grey"
+     android:layout_height="100dp"
+     android:layout_margin="5dp"
+     android:theme="@style/CalendarView"
+     android:dateTextAppearance="@style/CalenderViewDateCustomText"
+     android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"/>
+
+ <Button
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/submit_date_hour"
+     android:background="@drawable/button_add_style"
+     android:text="@string/submit"
+     android:textColor="@color/white"
+     android:textAllCaps="false"
+     android:textSize="15sp"
+     android:textStyle="bold"
+     android:layout_marginEnd="20sp"
+     android:layout_marginStart="20sp"
+     android:layout_marginTop="50dp"/>
+<!--     android:layout_marginBottom="100dp" />-->
+</LinearLayout>
+
+
+
+</ScrollView>

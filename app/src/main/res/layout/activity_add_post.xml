@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkGrey"
+    android:orientation="vertical"
+    tools:context=".DetailsCompany.AddPost">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/post_desc"
+            android:textColor="@color/brightGrey"
+            android:textSize="15dp"
+            android:padding="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="10"
+            android:id="@+id/post_body"
+            android:padding="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/brightGrey"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/select_activity_cv"
+            android:hint="@string/your_opinion"
+            android:textColorHint="@color/brightGrey"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:id="@+id/add_post_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/button_add_style"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"  />
+    </LinearLayout>
+
+</LinearLayout>
